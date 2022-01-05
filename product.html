@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>انتخاب محصول</title>
+</head>
+<body>
+
+<img src="images/10.png" id="imgRightCorner" class="d-none d-lg-block">
+<img src="images/background.png" id="background" class="d-lg-block d-none">
+<img src="images/9.png" class="d-lg-none d-block mobileBackground">
+
+<header class="d-lg-flex d-none justify-content-between p-4 pHeader">
+    <img src="images/logo.png">
+    <img src="images/profile.png" id="profile">
+</header>
+
+<div class="container">
+    <div class="pageNumber d-flex m-auto py-5" id="p1">
+        <div class="selectedPage text-center position-relative">
+            <p>۱</p>
+            <p class="position-absolute text-white">انتخاب</p>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="row" id="section1">
+        <div class="col-12 col-lg-6 mt-5 order-2 order-lg-1">
+            <h2 class="mb-5 text-center">لطفا نوع عطر را انتخاب کنید</h2>
+            <div id="select" class="d-flex justify-content-between font-weight-bold position-relative p-2 mb-2">
+                <p class="position-absolute">نوع عطر</p>
+                <p class="position-absolute smallLine"></p>
+                <p class="h4" id="title">عطر</p>
+                <img class="mt-2" src="images/icons8-expand-arrow-50.png" id="arrow">
+            </div>
+            <ul class="list-unstyled text-right m-auto w-75 p-0 shadow" id="ulSelect">
+                <li>شماره یک</li>
+                <li>شماره دو</li>
+                <li>شماره سه</li>
+                <li>شماره چهار</li>
+                <li>شماره پنج</li>
+                <li>شماره شش</li>
+                <li>شماره هفت</li>
+                <li>شماره هشت</li>
+                <li>شماره نه</li>
+                <li>شماره ده</li>
+            </ul>
+            <p class="text-justify w-75 m-auto">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای
+            </p>
+            <div class="w-75 m-auto">
+                <button class="sabtBtn mt-4 border-0 shadow">
+                    <a href="#p2" class="text-white">مرحله بعد</a>
+                </button>
+            </div>
+
+        </div>
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <img src="images/step1illustration.png" class="d-block m-auto leftBigImgs">
+        </div>
+    </div>
+    <div class="footerLine m-auto position-relative">
+        <div class="position-absolute"></div>
+    </div>
+    <div class="pageNumber d-flex m-auto py-5" id="p2">
+        <div></div>
+        <div class="selectedPage text-center position-relative">
+            <p>۲</p>
+            <p class="position-absolute text-white">حجم</p>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="row" id="section2">
+        <div class="col-12 col-lg-6 mt-5 order-2 order-lg-1 w-75">
+            <h2 class="mb-5 text-center">لطفا مقدار عطر را انتخاب کنید</h2>
+            <form>
+                <input type="range" value="22" step="1" min="10" max="50" id="range" class="w-75 m-auto d-block">
+            </form>
+            <p class="text-right font-weight-bold w-75 m-auto" style="font-size: 18px;margin-top: 20px!important;margin-bottom: 20px!important;">مناسب برای <span id="UseNumber">20</span> بار استفاده</p>
+            <p class="text-justify w-75 m-auto">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای
+            </p>
+            <div class="w-75 m-auto d-flex justify-content-between">
+                <button class="prevBtn mt-4 font-weight-bold">
+                    <img src="images/icons8-next-page-30.PNG">
+                    <a href="#p1">مرحله پیشین</a>
+                </button>
+                <button class="NextBtn mt-4 border-0 font-weight-bold mr-4 shadow">
+                    <a href="#p3" class="text-white">مرحله بعد</a>
+                </button>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <img src="images/step1illustration.png" id="imgRange" class="d-block m-auto leftBigImgs">
+        </div>
+    </div>
+    <div class="footerLine m-auto position-relative">
+        <div class="position-absolute"></div>
+    </div>
+    <div class="pageNumber d-flex m-auto py-5" id="p3">
+        <div></div>
+        <div></div>
+        <div class="selectedPage text-center position-relative">
+            <p>۳</p>
+            <p class="position-absolute text-white">غلظت</p>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="row" id="section3">
+        <div class="col-12 col-lg-6 mt-5 order-2 order-lg-1 w-75">
+            <h2 class="mb-5 text-center">لطفا غلظت عطر را انتخاب کنید</h2>
+            <form class="row w-75 m-auto text-right">
+                <div class="col-6">
+                    <div class="radioButton active">
+                        <div class="specialRadio active" data-value="10"></div>
+                        <input type="radio" name="odkolon">
+                        <label class="font-weight-bold mr-2">ادکلان</label><br>
+                        <p class="font-weight-bold">بین 2 تا 5 درصد</p>
+                    </div>
+                    <div class="radioButton">
+                        <div class="specialRadio" data-value="15"></div>
+                        <input type="radio" name="odkolon">
+                        <label class="font-weight-bold mr-2">ادوتویلت</label><br>
+                        <p class="font-weight-bold">بین 5 تا 10 درصد</p>
+                    </div>
+                    <div class="radioButton">
+                        <div class="specialRadio" data-value="20"></div>
+                        <input type="radio" name="odkolon">
+                        <label class="font-weight-bold mr-2">تویلت</label><br>
+                        <p class="font-weight-bold">بین 10 تا 15 درصد</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="radioButton">
+                        <div class="specialRadio" data-value="30"></div>
+                        <input type="radio" name="odkolon">
+                        <label class="font-weight-bold mr-2">ادوپرفیوم</label><br>
+                        <p class="font-weight-bold">بین 15 تا 20 درصد</p>
+                    </div>
+                    <div class="radioButton">
+                        <div class="specialRadio" data-value="40"></div>
+                        <input type="radio" name="odkolon">
+                        <label class="font-weight-bold mr-2">پرفیوم</label><br>
+                        <p class="font-weight-bold">بین 20 تا 30 درصد</p>
+                    </div>
+                    <div class="radioButton">
+                        <div class="specialRadio" data-value="50"></div>
+                        <input type="radio" name="odkolon">
+                        <label class="font-weight-bold mr-2">سوپرپرفیوم</label><br>
+                        <p class="font-weight-bold">40 درصد</p>
+                    </div>
+                </div>
+            </form>
+            <div class="w-75 m-auto d-flex justify-content-around">
+                <button class="prevBtn mt-4 font-weight-bold">
+                    <img src="images/icons8-next-page-30.png">
+                    <a href="#p2">مرحله پیشین</a>
+                </button>
+                <button class="NextBtn mt-4 border-0 font-weight-bold mr-4 shadow">
+                    <a href="#p4" class="text-white">مرحله بعد</a>
+                </button>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <img src="images/step1illustration.png" class="leftBigImgs m-auto" id="ghelzatImg">
+            <p class="text-center price">بها <span id="ghelzatPrice">10</span> تومان</p>
+        </div>
+    </div>
+    <div class="footerLine m-auto position-relative" style="margin-top: 70px!important;">
+        <div class="position-absolute"></div>
+    </div>
+    <div class="pageNumber d-flex m-auto py-5" id="p4">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="selectedPage text-center position-relative">
+            <p>۴</p>
+            <p class="position-absolute text-white">بطری</p>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="row" id="section4">
+        <div class="col-12 mt-5 d-block d-lg-none">
+            <img src="images/p4.png" class="d-block m-auto" id="productBigImage">
+        </div>
+        <div class="col-12 mt-5 ">
+            <h2 class="mb-5 text-right w-75 m-auto">لطفا شیشه عطر مورد نظر را انتخاب کنید</h2>
+            <div class="products d-flex justify-content-center justify-content-lg-around w-75 m-auto">
+                <img src="images/p1.png" data-value="20" class="active">
+                <img src="images/p2.png" data-value="28">
+                <img src="images/p3.png" data-value="40">
+                <img src="images/p4.png" data-value="44">
+                <img src="images/p5.png" data-value="72">
+                <img src="images/p6.png" data-value="80">
+            </div>
+            <p class="mr-auto d-block d-lg-none text-center price">بها <span class="bottlePrice">20</span> تومان</p>
+            <div class="m-auto d-flex w-75 justify-content-center">
+                <button class="prevBtn mt-4 font-weight-bold">
+                    <img src="images/icons8-next-page-30.PNG">
+                    <a href="#p3">مرحله پیشین</a>
+                </button>
+                <button class="NextBtn mt-4 border-0 font-weight-bold mr-4 shadow">
+                    <a href="#p5" class="text-white">مرحله بعد</a>
+                </button>
+                <p class="mr-auto d-none d-lg-block price">بها <span class="bottlePrice">20</span> تومان</p>
+            </div>
+        </div>
+    </div>
+    <div class="footerLine m-auto position-relative" style="margin-top: 70px!important;">
+        <div class="position-absolute"></div>
+    </div>
+    <div class="pageNumber d-flex m-auto py-5" id="p5">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="selectedPage text-center position-relative">
+            <p>۵</p>
+            <p class="position-absolute text-white">بسته بندی</p>
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="row" id="section5">
+        <div class="col-12 col-lg-8 mt-5 order-2 order-lg-1 w-75">
+            <h2 class="mb-5 text-center">لطفا نوع بسته بندی را انتخاب کنید</h2>
+            <form class="packageType d-flex flex-column flex-lg-row justify-content-center m-auto w-100">
+                <div class="packageDiv position-relative mx-1 active">
+                    <div class="specialRadio2 active" data-value="2000"></div>
+                    <input type="radio" name="package"><label class="mr-5">بسته بندی عادی</label>
+                </div>
+                <div class="packageDiv position-relative mx-1">
+                    <div class="specialRadio2" data-value="4000"></div>
+                    <input type="radio" name="package"><label class="mr-5">بسته بندی هدیه عادی</label>
+                </div>
+                <div class="packageDiv position-relative mx-1">
+                    <div class="specialRadio2" data-value="8000"></div>
+                    <input type="radio" name="package"><label class=" mr-5">بسته بندی هدیه ویژه</label>
+                </div>
+            </form>
+            <form class="row bottleText m-auto w-75 flex-wrap">
+                <div class="col-lg-8">
+                    <div class="position-relative h-25 d-none d-lg-block">
+                        <span class="position-absolute">متن روی بطری</span>
+                        <p class="position-absolute smallLine" style="top: 24px;height:1px;"></p>
+                        <input class="w-100 h-75 mt-4 bottletextt" type="text" placeholder="متن را وارد کنید">
+                    </div>
+                    <div class="position-relative h-50 mt-5 d-none d-lg-block">
+                        <span class="position-absolute" style="top:-12px">متن روی جعبه</span>
+                        <p class="position-absolute smallLine" style="top: 0;height:1px;"></p>
+                        <input class="w-100 h-75 boxText" type="text" placeholder="متن را وارد کنید">
+                    </div>
+
+                    <div class="w-100 d-flex justify-content-center">
+                        <button class="prevBtn mt-4 font-weight-bold" style="width: 234px;">
+                            <img src="images/icons8-next-page-30.PNG">
+                            <a href="#p4">مرحله پیشین</a>
+                        </button>
+                        <button class="NextBtn mt-4 border-0 font-weight-bold mr-4 shadow">
+                            <a href="#p6" class="text-white">مرحله بعد</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-right d-none d-lg-block">
+                    <p class="packageDes mt-3 text-justify">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="col-12 col-lg-4 order-1 order-lg-2">
+            <img src="images/perfumepack.png" class="m-auto w-50 d-block leftBigImgs"
+                 style="margin-top: 59px!important;">
+            <p class="text-center price">بها <span id="packagePrice">2000</span> تومان</p>
+        </div>
+    </div>
+    <div class="footerLine m-auto position-relative" style="margin-top: 140px!important;">
+        <div class="position-absolute"></div>
+    </div>
+    <div class="pageNumber d-flex m-auto py-5" id="p6">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="selectedPage text-center position-relative">
+            <p class="position-absolute">ارسال</p>
+        </div>
+        <div></div>
+    </div>
+    <div class="row mt-5" id="section6">
+        <div class="col-12 col-lg-6 mt-5 order-2 order-lg-1 w-75">
+            <h2 class="mb-5 text-center">متن قبل از صورت حساب</h2>
+            <p class="text-justify w-50 m-auto">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+            </p>
+            <div class="w-100 d-flex justify-content-center mt-5">
+                <button class="prevBtn mt-4 font-weight-bold">
+                    <img src="images/icons8-next-page-30.PNG">
+                    <a href="#p5">مرحله پیشین</a>
+                </button>
+                <button class="sabtBtn mt-4 border-0 font-weight-bold mr-4 shadow">
+                    <a id="openModal">ثبت سفارش</a>
+                </button>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 order-1 order-lg-2 mt-5">
+            <img src="images/step6illustration.png" class="m-auto d-block leftBigImgs">
+            <p class="text-center price">بها 28,000 تومان</p>
+        </div>
+    </div>
+    <div class="footerLine m-auto position-relative" style="margin-top: 97px!important;">
+        <div class="position-absolute"></div>
+    </div>
+    <div class="pageNumber d-flex m-auto py-5" id="p7">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="selectedPage text-center position-relative">
+            <p>۷</p>
+            <p class="position-absolute text-white">دریافت</p>
+        </div>
+    </div>
+    <div class="row mt-5" id="section7">
+        <div class="col-12 col-lg-6 mt-5 order-2 order-lg-1 w-75">
+            <h2 class="mb-5 text-center">پیغام سپاسگذاری از خرید</h2>
+            <p class="text-justify w-50 m-auto">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+            </p>
+            <div class="w-50 m-auto d-flex justify-content-center justify-content-lg-start mt-5">
+                <button class="sabtBtn mt-5 border-0 font-weight-bold shadow">
+                    <a href="index.html" style="color: white">بازگشت به پروفایل</a>
+                </button>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 order-1 order-lg-2 mt-3">
+            <img src="images/step7illustration.png" class="m-auto d-block h-75 leftBigImgs">
+            <p class="text-center price">کد پیگیری: 9824708</p>
+        </div>
+    </div>
+    <div class="footerLine m-auto position-relative" style="margin-top: 59px!important;">
+        <div class="position-absolute"></div>
+    </div>
+</div>
+
+
+
+<div id="popup" class="shadow">
+    <br>
+    <br>
+    <span id="closeModal">بستن</span>
+    <h2 id="popupTitr">صورت حساب</h2><br><br>
+    <div class="inputs">
+        <div>
+            <input type="text" required>
+            <label>نام(ضروری)</label>
+        </div>
+        <div>
+            <input type="text" required>
+            <label>نام خانوادگی(ضروری)</label>
+        </div>
+        <div>
+            <input type="text">
+            <label>نام شرکت(اختیاری)</label>
+        </div>
+        <div>
+            <input type="text" required>
+            <label>کشور(ضروری)</label>
+        </div>
+        <div>
+            <input type="text" required>
+            <label>استان(ضروری)</label>
+        </div>
+        <div>
+            <input type="text" required>
+            <label>شهرستان(ضروری)</label>
+        </div>
+        <div id="address">
+            <input type="text" required>
+            <label>آدرس(ضروری)</label>
+        </div>
+    </div>
+
+    <div id="map">
+
+        <div style="width:100%;height:280px;">
+
+            <iframe style="width: 61%; height: 211px;margin: auto;border-radius: 42px;display: block;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1598.9821296726593!2d51.10716615812102!3d36.723419594991135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8c09667ba5dd9b%3A0x83181512fd55d80e!2sadminesite!5e0!3m2!1sen!2s!4v1584797588650!5m2!1sen!2s"
+                    height="250" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        </div>
+    </div>
+
+    <div class="inputs">
+        <div style="display: flex;width: 99%">
+            <input type="checkbox"
+                   style="border-radius:7px;color:#c28099;width: 20px;height: 20px;margin-top: -9px;margin-right: 36px;">
+            <label style="right: 58px">ارسال به یک آدرس دیگر</label>
+        </div>
+        <div>
+            <input type="text" required>
+            <label>کدپستی(ضروری)</label>
+        </div>
+        <div>
+            <input type="tel" required>
+            <label>شماره تلفن(ضروری)</label>
+        </div>
+        <div style="float: right;margin-right: 4px">
+            <input type="email" required>
+            <label>آدرس ایمیل(ضروری)</label>
+        </div>
+        <br>
+        <div style="width: 99%">
+            <input type="text" style="width: 95%">
+            <label>توضیحات سفارش</label>
+        </div>
+    </div>
+
+    <h2>روش پرداخت</h2>
+
+    <div id="payBox">
+        <div class="pay" style="padding: 9px">
+            <img src="images/نصب-همراه-بانک-ملت.jpg" style="border-radius: 49%;width: 74px;height: 74px">
+            <p style="line-height: 72px;margin-right: 29px" class="text-right font-weight-bold">
+                پرداخت از طریق بانک ملت-
+                پرداخت سریع و امن
+            </p>
+        </div>
+    </div>
+    <p style="text-align: right;margin:auto;color: #9A69A0;margin-top: 11px;width: 60%">آیا با قوانین موافق هستید؟</p>
+    <div style="display: flex;width: 69%;margin-top: 12px!important;margin: auto;">
+        <input type="checkbox"
+               style="border-radius: 7px;color: #9A69A0;width: 20px;height: 20px;margin-top: 1px;margin-right: 37px;margin-left: 10px;;">
+        <label style="right: 58px;color: #9A69A0">قبول شرایط و قوانین</label>
+    </div>
+
+    <a id="btn">پرداخت</a>
+
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

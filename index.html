@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>صفحه اصلی</title>
+</head>
+<body>
+
+<img src="images/1.png" id="imgRight" class="d-none d-lg-block">
+<img src="images/4.png" id="imgLeft" class="d-none d-lg-block">
+<img src="images/5.png" id="imgLeft2" class="d-none d-lg-block">
+<img src="images/2.png" id="imgcenter" class="d-none d-lg-block">
+<img src="images/3.png" id="imgcenter2" class="d-none d-lg-block">
+<img src="images/6.png" id="imgbottom" class="d-none d-lg-block">
+<img src="images/7.png" id="imgbottom2" class="d-none d-lg-block">
+<img src="images/9.png" class="d-block d-lg-none mobileBackground">
+
+<header id="mobileHeader" class="d-flex d-lg-none justify-content-around p-4">
+    <img src="images/logo.png">
+    <img src="images/icons8-menu-48.png" id="hambergerMenu">
+    <ul class="list-unstyled position-absolute text-right p-0" id="mobileMenu">
+
+        <li class="font-weight-bold">
+            <a>درباره ما</a>
+        </li>
+        <li class="font-weight-bold">
+            <a>سرویس ها</a>
+        </li>
+        <li class="font-weight-bold">
+            <a>ارتباط با ما</a>
+        </li>
+        <li class="font-weight-bold">
+            <a>پشتیبانی</a>
+        </li>
+        <li class="font-weight-bold">
+            <a>ثبت نام</a>
+        </li>
+        <li class="font-weight-bold">
+            <a>ورود</a>
+        </li>
+    </ul>
+</header>
+<header class="justify-content-between p-5 d-none d-lg-flex deskHeader">
+    <img src="images/logo.png" class="img-fluid" style="z-index: 4">
+    <ul class="list-unstyled d-flex justify-content-end flex-wrap">
+
+        <li class="font-weight-bold">
+            <a>درباره ما</a>
+        </li>
+        <li class="font-weight-bold">
+            <a>سرویس ها</a>
+        </li>
+        <li class="font-weight-bold">
+            <a>ارتباط با ما</a>
+        </li>
+        <li class="font-weight-bold">
+            <a>پشتیبانی</a>
+        </li>
+        <li class="font-weight-bold">
+            <a>ثبت نام</a>
+        </li>
+        <li class="mx-3 h5 font-weight-bold active">
+            <a>ورود</a>
+        </li>
+    </ul>
+</header>
+
+<section id="section0" class="position-relative">
+    <a href="product.html"><img src="images/icons8-next-page-30.png" class="position-absolute toBelow"></a>
+    <div class="container">
+        <div class="row mt-6">
+            <div class="col-12 col-lg-5 order-2 text-right my-5">
+                <h1 class="font-weight-bold titr text-center">یک متن عالی<br> برای ترغیب به خرید</h1>
+                <p class="display-5 my-5 titr">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                    نیاز، و کاربردهای
+                </p>
+                <div class="d-flex justify-content-between font-weight-bold buttons">
+                    <a>
+                        آغاز خرید
+                    </a>
+                    <a href="product.html" class="d-flex justify-content-center pr-2 bg-transparent" id="showProducts">
+                        مشاهده محصولات<img src="images/icons8-next-page-30.png">
+                    </a>
+                </div>
+            </div>
+            <div  class="col-12 col-lg-7 order-1  order-lg-2">
+                <img id="mainimg" src="images/homeillustration.png">
+            </div>
+
+        </div>
+    </div>
+    <div class="col-12 order-4 mt-5 socialDiv">
+        <div class="d-flex justify-content-end">
+            <p class="h5 text-right followUs ml-3">ما را دنبال کنید</p>
+            <div class="d-flex socials ml-5">
+                <a>
+                    <img src="images/twitter.png" class="img-fluid">
+                </a>
+                <a>
+                    <img src="images/instagram.png" class="img-fluid">
+                </a>
+                <a>
+                    <img src="images/telegram.png" class="img-fluid">
+                </a>
+                <a>
+                    <img src="images/linkedin.png" class="img-fluid">
+                </a>
+                <a>
+                    <img src="images/facebook.png" class="img-fluid">
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // hambergerMenu
+
+    let hambergerMenu=document.getElementById('hambergerMenu')
+    let mobileMenu=document.getElementById('mobileMenu')
+
+    hambergerMenu.addEventListener('click',function () {
+        mobileMenu.classList.toggle('active');
+    })
+</script>
+<script src="js/script.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+
+</body>
+</html>
